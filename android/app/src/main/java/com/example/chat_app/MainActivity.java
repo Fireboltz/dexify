@@ -1,4 +1,4 @@
-package com.example.chat_app;
+package com.example.dexify;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

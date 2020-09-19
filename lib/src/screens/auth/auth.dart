@@ -1,5 +1,5 @@
-import 'package:chat_app/src/screens/auth/components/auth_views.dart';
-import 'package:chat_app/src/screens/auth/components/tab_bar.dart';
+import 'package:dexify/src/screens/auth/components/auth_views.dart';
+import 'package:dexify/src/screens/auth/components/tab_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 

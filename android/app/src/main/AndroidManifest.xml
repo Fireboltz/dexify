@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.chat_app">
+    package="com.example.dexify">
 
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -8,14 +8,14 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="Chap"
+        android:label="Dexify"
         android:icon="@mipmap/launcher_icon"
 
         android:hardwareAccelerated="true"
         >
                 <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@mipmap/ic_notification" />
+            android:resource="@mipmap/launcher_icon" />
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

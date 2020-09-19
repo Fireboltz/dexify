@@ -1,4 +1,4 @@
-import 'package:chat_app/src/screens/home/home_page.dart';
+import 'package:dexify/src/screens/home/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

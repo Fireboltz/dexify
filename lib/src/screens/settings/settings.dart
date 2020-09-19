@@ -1,8 +1,8 @@
-import 'package:chat_app/src/constants/colors.dart';
-import 'package:chat_app/src/constants/gradients.dart';
-import 'package:chat_app/src/screens/auth/auth.dart';
-import 'package:chat_app/src/screens/settings/settings_gql.dart';
-import 'package:chat_app/src/state/app_state.dart';
+import 'package:dexify/src/constants/colors.dart';
+import 'package:dexify/src/constants/gradients.dart';
+import 'package:dexify/src/screens/auth/auth.dart';
+import 'package:dexify/src/screens/settings/settings_gql.dart';
+import 'package:dexify/src/state/app_state.dart';
 import 'package:flutter/material.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:provider/provider.dart';

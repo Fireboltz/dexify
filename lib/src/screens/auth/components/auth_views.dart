@@ -1,9 +1,9 @@
-import 'package:chat_app/src/constants/colors.dart';
-import 'package:chat_app/src/constants/gradients.dart';
-import 'package:chat_app/src/screens/auth/auth_gql.dart';
-import 'package:chat_app/src/screens/auth/model.dart';
-import 'package:chat_app/src/screens/chats/chats.dart';
-import 'package:chat_app/src/state/app_state.dart';
+import 'package:dexify/src/constants/colors.dart';
+import 'package:dexify/src/constants/gradients.dart';
+import 'package:dexify/src/screens/auth/auth_gql.dart';
+import 'package:dexify/src/screens/auth/model.dart';
+import 'package:dexify/src/screens/chats/chats.dart';
+import 'package:dexify/src/state/app_state.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

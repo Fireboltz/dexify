@@ -1,4 +1,4 @@
-import 'package:chat_app/src/screens/users/model.dart';
+import 'package:dexify/src/screens/users/model.dart';
 
 class ChatListModel {
   final List<ChatModel> chats;

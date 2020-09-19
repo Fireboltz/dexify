@@ -1,4 +1,4 @@
-import 'package:chat_app/src/constants/colors.dart';
+import 'package:dexify/src/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 const RED_GRADIENT = RadialGradient(

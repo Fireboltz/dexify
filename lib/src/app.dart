@@ -1,6 +1,6 @@
-import 'package:chat_app/src/screens/auth/auth.dart';
-import 'package:chat_app/src/screens/chats/chats.dart';
-import 'package:chat_app/src/state/app_state.dart';
+import 'package:dexify/src/screens/auth/auth.dart';
+import 'package:dexify/src/screens/chats/chats.dart';
+import 'package:dexify/src/state/app_state.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
