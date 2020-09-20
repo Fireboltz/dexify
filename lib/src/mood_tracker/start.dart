@@ -62,7 +62,7 @@ class _StartPageState extends State<StartPage> {
             title: Text('My Mood Tracker',
                 style: TextStyle(
                     fontStyle: FontStyle.normal, fontWeight: FontWeight.bold)),
-            backgroundColor: Colors.lightBlueAccent,
+            backgroundColor: Color(0xFF2633C5),
             actions: <Widget>[
               Padding(
                   padding: EdgeInsets.only(right: 20.0),

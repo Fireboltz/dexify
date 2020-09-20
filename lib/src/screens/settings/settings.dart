@@ -66,7 +66,6 @@ class SettingScreen extends StatelessWidget {
     return [
       Container(margin: EdgeInsets.only(top: 20)),
       meQueryComponent(context, appState),
-      darkModeComponent(appState),
       logOutComponent(appState, context),
       deleteUserMutationComponent(context, appState),
     ];
@@ -111,20 +110,6 @@ class SettingScreen extends StatelessWidget {
       info: "Your name is set to '${name['name'] ?? ""}'",
       color: Color(0xFFDE6614),
       onPressed: () => displayDialog(context, runMutation, rename: true),
-    );
-  }
-
-  Widget darkModeComponent(appState) {
-    return settingsItemComponent(
-      title: "Enable Dark Theme",
-      info: "Switch to dark theme",
-      color: Color(0xFFDE5215),
-      onPressed: () async {
-        final pref = await SharedPreferences.getInstance();
-        appState.toggleTheme();
-        final dark = appState.currentTheme.brightness == Brightness.dark;
-        await pref.setBool("dark", dark);
-      },
     );
   }
 

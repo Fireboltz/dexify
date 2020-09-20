@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return loader ? Center(child: CircularProgressIndicator()) : Scaffold(
       appBar: AppBar(
         title: Text('Mood Records'),
-        backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: Color(0xFF2633C5),
         actions: <Widget>[
           IconButton(icon: Icon(Icons.show_chart),
               onPressed: () => Navigator.of(context).pushNamed('/chart'))

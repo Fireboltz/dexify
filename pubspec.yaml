@@ -61,9 +61,8 @@ flutter:
     uses-material-design: true
     # To add assets to your application, add an assets section, like this:
     assets:
-        - assets/icon/github_ic.png
-        - assets/linkedin_ic.png
         - assets/smile.png
+        - assets/happy.png
         - assets/sad.png
         - assets/angry.png
         - assets/scared.png
@@ -82,6 +81,31 @@ flutter:
         - assets/eat.png
         - assets/date.png
         - assets/clean.png
+        - assets/fitness_app/tab_2.png
+        - assets/fitness_app/tab_3.png
+        - assets/fitness_app/tab_4.png
+        - assets/fitness_app/eaten.png
+        - assets/fitness_app/burned.png
+        - assets/fitness_app/breakfast.png
+        - assets/fitness_app/lunch.png
+        - assets/fitness_app/snack.png
+        - assets/fitness_app/dinner.png
+        - assets/fitness_app/bell.png
+        - assets/fitness_app/bottle.png
+        - assets/fitness_app/tab_1s.png
+        - assets/fitness_app/tab_1.png
+        - assets/fitness_app/tab_2s.png
+        - assets/fitness_app/back.png
+        - assets/fitness_app/runner.png
+        - assets/fitness_app/area1.png
+        - assets/fitness_app/area2.png
+        - assets/fitness_app/area3.png
+        - assets/fitness_app/area5.png
+        - assets/fitness_app/area6.png
+        - assets/fitness_app/area78.png
+        - assets/fitness_app/glass.png
+        - assets/fitness_app/tab_3s.png
+        - assets/fitness_app/tab_4s.png
     #  - images/a_dot_burr.jpeg
     #  - images/a_dot_ham.jpeg
     # An image asset can refer to one or more resolution-specific "variants", see

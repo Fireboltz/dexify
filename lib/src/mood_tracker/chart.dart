@@ -174,7 +174,7 @@ class _MoodChartState extends State<MoodChart> {
 
     return Scaffold(
       appBar: AppBar(
-          title: Text('Mood Graphs'), backgroundColor: Colors.lightBlueAccent),
+          title: Text('Mood Graphs'), backgroundColor: Color(0xFF2633C5)),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[

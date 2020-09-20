@@ -42,7 +42,8 @@ class _FaceDetectionFromImageState extends State<FaceDetectionFromImage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Face detection with Smile'),
+        backgroundColor: Color(0xFF2633C5),
+        title: Text('Let\'s take a picture'),
       ),
       body: Center(
         child: Text('Press the floating button to take a picture!')
