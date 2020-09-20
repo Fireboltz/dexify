@@ -1,4 +1,4 @@
-import 'package:dexify/app_themes/fintness_app_theme.dart';
+import 'package:dexify/app_themes/dexify_app_theme.dart';
 import 'package:dexify/ui_view/area_list_view.dart';
 import 'package:dexify/ui_view/running_view.dart';
 import 'package:dexify/ui_view/title_view.dart';
@@ -88,7 +88,7 @@ class _EmotionDetectionScreenState extends State<EmotionDetectionScreen>
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: FitnessAppTheme.background,
+      color: DexifyAppTheme.background,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Stack(
@@ -144,13 +144,13 @@ class _EmotionDetectionScreenState extends State<EmotionDetectionScreen>
                     0.0, 30 * (1.0 - topBarAnimation.value), 0.0),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: FitnessAppTheme.white.withOpacity(topBarOpacity),
+                    color: DexifyAppTheme.white.withOpacity(topBarOpacity),
                     borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(32.0),
                     ),
                     boxShadow: <BoxShadow>[
                       BoxShadow(
-                          color: FitnessAppTheme.grey
+                          color: DexifyAppTheme.grey
                               .withOpacity(0.4 * topBarOpacity),
                           offset: const Offset(1.1, 1.1),
                           blurRadius: 10.0),
@@ -177,11 +177,11 @@ class _EmotionDetectionScreenState extends State<EmotionDetectionScreen>
                                   'Motivation',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
-                                    fontFamily: FitnessAppTheme.fontName,
+                                    fontFamily: DexifyAppTheme.fontName,
                                     fontWeight: FontWeight.w700,
                                     fontSize: 22 + 6 - 6 * topBarOpacity,
                                     letterSpacing: 1.2,
-                                    color: FitnessAppTheme.darkerText,
+                                    color: DexifyAppTheme.darkerText,
                                   ),
                                 ),
                               ),

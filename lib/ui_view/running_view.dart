@@ -1,4 +1,4 @@
-import 'package:dexify/app_themes/fintness_app_theme.dart';
+import 'package:dexify/app_themes/dexify_app_theme.dart';
 import 'package:flutter/material.dart';
 
 class RunningView extends StatelessWidget {
@@ -30,7 +30,7 @@ class RunningView extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 16, bottom: 16),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: FitnessAppTheme.white,
+                            color: DexifyAppTheme.white,
                             borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(8.0),
                                 bottomLeft: Radius.circular(8.0),
@@ -38,7 +38,7 @@ class RunningView extends StatelessWidget {
                                 topRight: Radius.circular(8.0)),
                             boxShadow: <BoxShadow>[
                               BoxShadow(
-                                  color: FitnessAppTheme.grey.withOpacity(0.4),
+                                  color: DexifyAppTheme.grey.withOpacity(0.4),
                                   offset: Offset(1.1, 1.1),
                                   blurRadius: 10.0),
                             ],
@@ -54,7 +54,7 @@ class RunningView extends StatelessWidget {
                                   child: AspectRatio(
                                     aspectRatio: 1.714,
                                     child: Image.asset(
-                                        "assets/fitness_app/back.png"),
+                                        "assets/dexify/back.png"),
                                   ),
                                 ),
                               ),
@@ -74,12 +74,12 @@ class RunningView extends StatelessWidget {
                                           textAlign: TextAlign.left,
                                           style: TextStyle(
                                             fontFamily:
-                                                FitnessAppTheme.fontName,
+                                                DexifyAppTheme.fontName,
                                             fontWeight: FontWeight.w500,
                                             fontSize: 14,
                                             letterSpacing: 0.0,
                                             color:
-                                                FitnessAppTheme.nearlyDarkBlue,
+                                                DexifyAppTheme.nearlyDarkBlue,
                                           ),
                                         ),
                                       ),
@@ -96,11 +96,11 @@ class RunningView extends StatelessWidget {
                                       "Keep it up\nand stick to your plan! Keep fighting and never give up!",
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
-                                        fontFamily: FitnessAppTheme.fontName,
+                                        fontFamily: DexifyAppTheme.fontName,
                                         fontWeight: FontWeight.w500,
                                         fontSize: 10,
                                         letterSpacing: 0.0,
-                                        color: FitnessAppTheme.grey
+                                        color: DexifyAppTheme.grey
                                             .withOpacity(0.5),
                                       ),
                                     ),
@@ -117,7 +117,7 @@ class RunningView extends StatelessWidget {
                         child: SizedBox(
                           width: 110,
                           height: 110,
-                          child: Image.asset("assets/fitness_app/area1.png"),
+                          child: Image.asset("assets/dexify/area1.png"),
                         ),
                       )
                     ],

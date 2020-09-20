@@ -1,4 +1,4 @@
-import 'package:dexify/app_themes/fintness_app_theme.dart';
+import 'package:dexify/app_themes/dexify_app_theme.dart';
 import 'package:dexify/ui_view/wave_view.dart';
 import 'package:flutter/material.dart';
 
@@ -38,7 +38,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                   left: 24, right: 24, top: 16, bottom: 18),
               child: Container(
                 decoration: BoxDecoration(
-                  color: FitnessAppTheme.white,
+                  color: DexifyAppTheme.white,
                   borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(8.0),
                       bottomLeft: Radius.circular(8.0),
@@ -46,7 +46,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                       topRight: Radius.circular(68.0)),
                   boxShadow: <BoxShadow>[
                     BoxShadow(
-                        color: FitnessAppTheme.grey.withOpacity(0.2),
+                        color: DexifyAppTheme.grey.withOpacity(0.2),
                         offset: const Offset(1.1, 1.1),
                         blurRadius: 10.0),
                   ],
@@ -74,10 +74,10 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                         '2100',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                          fontFamily: FitnessAppTheme.fontName,
+                                          fontFamily: DexifyAppTheme.fontName,
                                           fontWeight: FontWeight.w600,
                                           fontSize: 32,
-                                          color: FitnessAppTheme.nearlyDarkBlue,
+                                          color: DexifyAppTheme.nearlyDarkBlue,
                                         ),
                                       ),
                                     ),
@@ -88,11 +88,11 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                         'ml',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                          fontFamily: FitnessAppTheme.fontName,
+                                          fontFamily: DexifyAppTheme.fontName,
                                           fontWeight: FontWeight.w500,
                                           fontSize: 18,
                                           letterSpacing: -0.2,
-                                          color: FitnessAppTheme.nearlyDarkBlue,
+                                          color: DexifyAppTheme.nearlyDarkBlue,
                                         ),
                                       ),
                                     ),
@@ -105,11 +105,11 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                     'of daily goal 3.5L',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                      fontFamily: FitnessAppTheme.fontName,
+                                      fontFamily: DexifyAppTheme.fontName,
                                       fontWeight: FontWeight.w500,
                                       fontSize: 14,
                                       letterSpacing: 0.0,
-                                      color: FitnessAppTheme.darkText,
+                                      color: DexifyAppTheme.darkText,
                                     ),
                                   ),
                                 ),
@@ -121,7 +121,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                               child: Container(
                                 height: 2,
                                 decoration: BoxDecoration(
-                                  color: FitnessAppTheme.background,
+                                  color: DexifyAppTheme.background,
                                   borderRadius: const BorderRadius.all(
                                       Radius.circular(4.0)),
                                 ),
@@ -145,7 +145,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                           width: 24,
                                           height: 24,
                                           child: Image.asset(
-                                              'assets/fitness_app/bell.png'),
+                                              'assets/dexify/bell.png'),
                                         ),
                                         Flexible(
                                           child: Text(
@@ -153,7 +153,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                             textAlign: TextAlign.start,
                                             style: TextStyle(
                                               fontFamily:
-                                                  FitnessAppTheme.fontName,
+                                                  DexifyAppTheme.fontName,
                                               fontWeight: FontWeight.w500,
                                               fontSize: 12,
                                               letterSpacing: 0.0,
@@ -178,11 +178,11 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                           children: <Widget>[
                             Container(
                               decoration: BoxDecoration(
-                                color: FitnessAppTheme.nearlyWhite,
+                                color: DexifyAppTheme.nearlyWhite,
                                 shape: BoxShape.circle,
                                 boxShadow: <BoxShadow>[
                                   BoxShadow(
-                                      color: FitnessAppTheme.nearlyDarkBlue
+                                      color: DexifyAppTheme.nearlyDarkBlue
                                           .withOpacity(0.4),
                                       offset: const Offset(4.0, 4.0),
                                       blurRadius: 8.0),
@@ -192,7 +192,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                 padding: const EdgeInsets.all(6.0),
                                 child: Icon(
                                   Icons.add,
-                                  color: FitnessAppTheme.nearlyDarkBlue,
+                                  color: DexifyAppTheme.nearlyDarkBlue,
                                   size: 24,
                                 ),
                               ),
@@ -202,11 +202,11 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                color: FitnessAppTheme.nearlyWhite,
+                                color: DexifyAppTheme.nearlyWhite,
                                 shape: BoxShape.circle,
                                 boxShadow: <BoxShadow>[
                                   BoxShadow(
-                                      color: FitnessAppTheme.nearlyDarkBlue
+                                      color: DexifyAppTheme.nearlyDarkBlue
                                           .withOpacity(0.4),
                                       offset: const Offset(4.0, 4.0),
                                       blurRadius: 8.0),
@@ -216,7 +216,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                 padding: const EdgeInsets.all(6.0),
                                 child: Icon(
                                   Icons.remove,
-                                  color: FitnessAppTheme.nearlyDarkBlue,
+                                  color: DexifyAppTheme.nearlyDarkBlue,
                                   size: 24,
                                 ),
                               ),
@@ -239,7 +239,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                 topRight: Radius.circular(80.0)),
                             boxShadow: <BoxShadow>[
                               BoxShadow(
-                                  color: FitnessAppTheme.grey.withOpacity(0.4),
+                                  color: DexifyAppTheme.grey.withOpacity(0.4),
                                   offset: const Offset(2, 2),
                                   blurRadius: 4),
                             ],

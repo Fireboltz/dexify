@@ -1,4 +1,4 @@
-import 'package:dexify/app_themes/fintness_app_theme.dart';
+import 'package:dexify/app_themes/dexify_app_theme.dart';
 import 'package:dexify/models/meals_list_data.dart';
 import 'package:flutter/material.dart';
 
@@ -144,11 +144,11 @@ class MealsView extends StatelessWidget {
                               mealsListData.titleTxt,
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: FitnessAppTheme.fontName,
+                                fontFamily: DexifyAppTheme.fontName,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
                                 letterSpacing: 0.2,
-                                color: FitnessAppTheme.white,
+                                color: DexifyAppTheme.white,
                               ),
                             ),
                             Expanded(
@@ -162,11 +162,11 @@ class MealsView extends StatelessWidget {
                                     Text(
                                       mealsListData.meals.join('\n'),
                                       style: TextStyle(
-                                        fontFamily: FitnessAppTheme.fontName,
+                                        fontFamily: DexifyAppTheme.fontName,
                                         fontWeight: FontWeight.w500,
                                         fontSize: 10,
                                         letterSpacing: 0.2,
-                                        color: FitnessAppTheme.white,
+                                        color: DexifyAppTheme.white,
                                       ),
                                     ),
                                   ],
@@ -182,11 +182,11 @@ class MealsView extends StatelessWidget {
                                         mealsListData.kacl.toString(),
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                          fontFamily: FitnessAppTheme.fontName,
+                                          fontFamily: DexifyAppTheme.fontName,
                                           fontWeight: FontWeight.w500,
                                           fontSize: 24,
                                           letterSpacing: 0.2,
-                                          color: FitnessAppTheme.white,
+                                          color: DexifyAppTheme.white,
                                         ),
                                       ),
                                       Padding(
@@ -196,11 +196,11 @@ class MealsView extends StatelessWidget {
                                           'kcal',
                                           style: TextStyle(
                                             fontFamily:
-                                                FitnessAppTheme.fontName,
+                                                DexifyAppTheme.fontName,
                                             fontWeight: FontWeight.w500,
                                             fontSize: 10,
                                             letterSpacing: 0.2,
-                                            color: FitnessAppTheme.white,
+                                            color: DexifyAppTheme.white,
                                           ),
                                         ),
                                       ),
@@ -208,11 +208,11 @@ class MealsView extends StatelessWidget {
                                   )
                                 : Container(
                                     decoration: BoxDecoration(
-                                      color: FitnessAppTheme.nearlyWhite,
+                                      color: DexifyAppTheme.nearlyWhite,
                                       shape: BoxShape.circle,
                                       boxShadow: <BoxShadow>[
                                         BoxShadow(
-                                            color: FitnessAppTheme.nearlyBlack
+                                            color: DexifyAppTheme.nearlyBlack
                                                 .withOpacity(0.4),
                                             offset: Offset(8.0, 8.0),
                                             blurRadius: 8.0),
@@ -239,7 +239,7 @@ class MealsView extends StatelessWidget {
                       width: 84,
                       height: 84,
                       decoration: BoxDecoration(
-                        color: FitnessAppTheme.nearlyWhite.withOpacity(0.2),
+                        color: DexifyAppTheme.nearlyWhite.withOpacity(0.2),
                         shape: BoxShape.circle,
                       ),
                     ),

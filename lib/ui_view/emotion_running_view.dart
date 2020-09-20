@@ -1,4 +1,4 @@
-import 'package:dexify/app_themes/fintness_app_theme.dart';
+import 'package:dexify/app_themes/dexify_app_theme.dart';
 import 'package:flutter/material.dart';
 
 class EmotionRunningView extends StatelessWidget {
@@ -30,7 +30,7 @@ class EmotionRunningView extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 16, bottom: 16),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: FitnessAppTheme.white,
+                            color: DexifyAppTheme.white,
                             borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(8.0),
                                 bottomLeft: Radius.circular(8.0),
@@ -38,7 +38,7 @@ class EmotionRunningView extends StatelessWidget {
                                 topRight: Radius.circular(8.0)),
                             boxShadow: <BoxShadow>[
                               BoxShadow(
-                                  color: FitnessAppTheme.grey.withOpacity(0.4),
+                                  color: DexifyAppTheme.grey.withOpacity(0.4),
                                   offset: Offset(1.1, 1.1),
                                   blurRadius: 10.0),
                             ],
@@ -54,7 +54,7 @@ class EmotionRunningView extends StatelessWidget {
                                   child: AspectRatio(
                                     aspectRatio: 1.714,
                                     child: Image.asset(
-                                        "assets/fitness_app/back.png"),
+                                        "assets/dexify/back.png"),
                                   ),
                                 ),
                               ),
@@ -74,12 +74,12 @@ class EmotionRunningView extends StatelessWidget {
                                           textAlign: TextAlign.left,
                                           style: TextStyle(
                                             fontFamily:
-                                            FitnessAppTheme.fontName,
+                                            DexifyAppTheme.fontName,
                                             fontWeight: FontWeight.w500,
                                             fontSize: 14,
                                             letterSpacing: 0.0,
                                             color:
-                                            FitnessAppTheme.nearlyDarkBlue,
+                                            DexifyAppTheme.nearlyDarkBlue,
                                           ),
                                         ),
                                       ),
@@ -96,11 +96,11 @@ class EmotionRunningView extends StatelessWidget {
                                       "Stay cheerful, and positive and remember that everything happens for the best.",
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
-                                        fontFamily: FitnessAppTheme.fontName,
+                                        fontFamily: DexifyAppTheme.fontName,
                                         fontWeight: FontWeight.w500,
                                         fontSize: 10,
                                         letterSpacing: 0.0,
-                                        color: FitnessAppTheme.grey
+                                        color: DexifyAppTheme.grey
                                             .withOpacity(0.5),
                                       ),
                                     ),
@@ -117,7 +117,7 @@ class EmotionRunningView extends StatelessWidget {
                         child: SizedBox(
                           width: 110,
                           height: 110,
-                          child: Image.asset("assets/fitness_app/area78.png"),
+                          child: Image.asset("assets/dexify/area78.png"),
                         ),
                       )
                     ],

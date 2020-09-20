@@ -1,4 +1,4 @@
-import 'package:dexify/app_themes/fintness_app_theme.dart';
+import 'package:dexify/app_themes/dexify_app_theme.dart';
 import 'package:flutter/material.dart';
 
 class TitleView extends StatelessWidget {
@@ -35,11 +35,11 @@ class TitleView extends StatelessWidget {
                         titleTxt,
                         textAlign: TextAlign.left,
                         style: TextStyle(
-                          fontFamily: FitnessAppTheme.fontName,
+                          fontFamily: DexifyAppTheme.fontName,
                           fontWeight: FontWeight.w500,
                           fontSize: 18,
                           letterSpacing: 0.5,
-                          color: FitnessAppTheme.lightText,
+                          color: DexifyAppTheme.lightText,
                         ),
                       ),
                     ),
@@ -55,11 +55,11 @@ class TitleView extends StatelessWidget {
                               subTxt,
                               textAlign: TextAlign.left,
                               style: TextStyle(
-                                fontFamily: FitnessAppTheme.fontName,
+                                fontFamily: DexifyAppTheme.fontName,
                                 fontWeight: FontWeight.normal,
                                 fontSize: 16,
                                 letterSpacing: 0.5,
-                                color: FitnessAppTheme.nearlyDarkBlue,
+                                color: DexifyAppTheme.nearlyDarkBlue,
                               ),
                             ),
                           ],

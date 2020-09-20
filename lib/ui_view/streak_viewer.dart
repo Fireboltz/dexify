@@ -1,14 +1,14 @@
-import 'package:dexify/app_themes/fintness_app_theme.dart';
+import 'package:dexify/app_themes/dexify_app_theme.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
 import '../main.dart';
 
-class MediterranesnDietView extends StatelessWidget {
+class StreakView extends StatelessWidget {
   final AnimationController animationController;
   final Animation animation;
 
-  const MediterranesnDietView(
+  const StreakView(
       {Key key, this.animationController, this.animation})
       : super(key: key);
 
@@ -27,7 +27,7 @@ class MediterranesnDietView extends StatelessWidget {
                   left: 24, right: 24, top: 16, bottom: 18),
               child: Container(
                 decoration: BoxDecoration(
-                  color: FitnessAppTheme.white,
+                  color: DexifyAppTheme.white,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(8.0),
                       bottomLeft: Radius.circular(8.0),
@@ -35,7 +35,7 @@ class MediterranesnDietView extends StatelessWidget {
                       topRight: Radius.circular(68.0)),
                   boxShadow: <BoxShadow>[
                     BoxShadow(
-                        color: FitnessAppTheme.grey.withOpacity(0.2),
+                        color: DexifyAppTheme.grey.withOpacity(0.2),
                         offset: Offset(1.1, 1.1),
                         blurRadius: 10.0),
                   ],
@@ -81,11 +81,11 @@ class MediterranesnDietView extends StatelessWidget {
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                   fontFamily:
-                                                      FitnessAppTheme.fontName,
+                                                      DexifyAppTheme.fontName,
                                                   fontWeight: FontWeight.w500,
                                                   fontSize: 16,
                                                   letterSpacing: -0.1,
-                                                  color: FitnessAppTheme.grey
+                                                  color: DexifyAppTheme.grey
                                                       .withOpacity(0.5),
                                                 ),
                                               ),
@@ -100,7 +100,7 @@ class MediterranesnDietView extends StatelessWidget {
                                                   width: 28,
                                                   height: 28,
                                                   child: Image.asset(
-                                                      "assets/fitness_app/eaten.png"),
+                                                      "assets/dexify/eaten.png"),
                                                 ),
                                                 Padding(
                                                   padding:
@@ -111,12 +111,12 @@ class MediterranesnDietView extends StatelessWidget {
                                                     textAlign: TextAlign.center,
                                                     style: TextStyle(
                                                       fontFamily:
-                                                          FitnessAppTheme
+                                                          DexifyAppTheme
                                                               .fontName,
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontSize: 16,
-                                                      color: FitnessAppTheme
+                                                      color: DexifyAppTheme
                                                           .darkerText,
                                                     ),
                                                   ),
@@ -130,13 +130,13 @@ class MediterranesnDietView extends StatelessWidget {
                                                     textAlign: TextAlign.center,
                                                     style: TextStyle(
                                                       fontFamily:
-                                                          FitnessAppTheme
+                                                          DexifyAppTheme
                                                               .fontName,
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontSize: 12,
                                                       letterSpacing: -0.2,
-                                                      color: FitnessAppTheme
+                                                      color: DexifyAppTheme
                                                           .grey
                                                           .withOpacity(0.5),
                                                     ),
@@ -180,11 +180,11 @@ class MediterranesnDietView extends StatelessWidget {
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                   fontFamily:
-                                                      FitnessAppTheme.fontName,
+                                                      DexifyAppTheme.fontName,
                                                   fontWeight: FontWeight.w500,
                                                   fontSize: 16,
                                                   letterSpacing: -0.1,
-                                                  color: FitnessAppTheme.grey
+                                                  color: DexifyAppTheme.grey
                                                       .withOpacity(0.5),
                                                 ),
                                               ),
@@ -199,7 +199,7 @@ class MediterranesnDietView extends StatelessWidget {
                                                   width: 28,
                                                   height: 28,
                                                   child: Image.asset(
-                                                      "assets/fitness_app/burned.png"),
+                                                      "assets/dexify/burned.png"),
                                                 ),
                                                 Padding(
                                                   padding:
@@ -210,12 +210,12 @@ class MediterranesnDietView extends StatelessWidget {
                                                     textAlign: TextAlign.center,
                                                     style: TextStyle(
                                                       fontFamily:
-                                                          FitnessAppTheme
+                                                          DexifyAppTheme
                                                               .fontName,
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontSize: 16,
-                                                      color: FitnessAppTheme
+                                                      color: DexifyAppTheme
                                                           .darkerText,
                                                     ),
                                                   ),
@@ -229,13 +229,13 @@ class MediterranesnDietView extends StatelessWidget {
                                                     textAlign: TextAlign.center,
                                                     style: TextStyle(
                                                       fontFamily:
-                                                          FitnessAppTheme
+                                                          DexifyAppTheme
                                                               .fontName,
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontSize: 12,
                                                       letterSpacing: -0.2,
-                                                      color: FitnessAppTheme
+                                                      color: DexifyAppTheme
                                                           .grey
                                                           .withOpacity(0.5),
                                                     ),
@@ -264,13 +264,13 @@ class MediterranesnDietView extends StatelessWidget {
                                       width: 100,
                                       height: 100,
                                       decoration: BoxDecoration(
-                                        color: FitnessAppTheme.white,
+                                        color: DexifyAppTheme.white,
                                         borderRadius: BorderRadius.all(
                                           Radius.circular(100.0),
                                         ),
                                         border: new Border.all(
                                             width: 4,
-                                            color: FitnessAppTheme
+                                            color: DexifyAppTheme
                                                 .nearlyDarkBlue
                                                 .withOpacity(0.2)),
                                       ),
@@ -285,11 +285,11 @@ class MediterranesnDietView extends StatelessWidget {
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                               fontFamily:
-                                                  FitnessAppTheme.fontName,
+                                                  DexifyAppTheme.fontName,
                                               fontWeight: FontWeight.normal,
                                               fontSize: 24,
                                               letterSpacing: 0.0,
-                                              color: FitnessAppTheme
+                                              color: DexifyAppTheme
                                                   .nearlyDarkBlue,
                                             ),
                                           ),
@@ -298,11 +298,11 @@ class MediterranesnDietView extends StatelessWidget {
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                               fontFamily:
-                                                  FitnessAppTheme.fontName,
+                                                  DexifyAppTheme.fontName,
                                               fontWeight: FontWeight.bold,
                                               fontSize: 12,
                                               letterSpacing: 0.0,
-                                              color: FitnessAppTheme.grey
+                                              color: DexifyAppTheme.grey
                                                   .withOpacity(0.5),
                                             ),
                                           ),
@@ -315,7 +315,7 @@ class MediterranesnDietView extends StatelessWidget {
                                     child: CustomPaint(
                                       painter: CurvePainter(
                                           colors: [
-                                            FitnessAppTheme.nearlyDarkBlue,
+                                            DexifyAppTheme.nearlyDarkBlue,
                                             HexColor("#8A98E8"),
                                             HexColor("#8A98E8")
                                           ],
@@ -341,7 +341,7 @@ class MediterranesnDietView extends StatelessWidget {
                       child: Container(
                         height: 2,
                         decoration: BoxDecoration(
-                          color: FitnessAppTheme.background,
+                          color: DexifyAppTheme.background,
                           borderRadius: BorderRadius.all(Radius.circular(4.0)),
                         ),
                       ),
@@ -360,11 +360,11 @@ class MediterranesnDietView extends StatelessWidget {
                                   'Exercise',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                    fontFamily: FitnessAppTheme.fontName,
+                                    fontFamily: DexifyAppTheme.fontName,
                                     fontWeight: FontWeight.w500,
                                     fontSize: 16,
                                     letterSpacing: -0.2,
-                                    color: FitnessAppTheme.darkText,
+                                    color: DexifyAppTheme.darkText,
                                   ),
                                 ),
                                 Padding(
@@ -403,11 +403,11 @@ class MediterranesnDietView extends StatelessWidget {
                                     '1.5 hrs done',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                      fontFamily: FitnessAppTheme.fontName,
+                                      fontFamily: DexifyAppTheme.fontName,
                                       fontWeight: FontWeight.w600,
                                       fontSize: 12,
                                       color:
-                                          FitnessAppTheme.grey.withOpacity(0.5),
+                                          DexifyAppTheme.grey.withOpacity(0.5),
                                     ),
                                   ),
                                 ),
@@ -427,11 +427,11 @@ class MediterranesnDietView extends StatelessWidget {
                                       'Food',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                        fontFamily: FitnessAppTheme.fontName,
+                                        fontFamily: DexifyAppTheme.fontName,
                                         fontWeight: FontWeight.w500,
                                         fontSize: 16,
                                         letterSpacing: -0.2,
-                                        color: FitnessAppTheme.darkText,
+                                        color: DexifyAppTheme.darkText,
                                       ),
                                     ),
                                     Padding(
@@ -472,10 +472,10 @@ class MediterranesnDietView extends StatelessWidget {
                                         '1172 kcal done',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                          fontFamily: FitnessAppTheme.fontName,
+                                          fontFamily: DexifyAppTheme.fontName,
                                           fontWeight: FontWeight.w600,
                                           fontSize: 12,
-                                          color: FitnessAppTheme.grey
+                                          color: DexifyAppTheme.grey
                                               .withOpacity(0.5),
                                         ),
                                       ),
@@ -497,11 +497,11 @@ class MediterranesnDietView extends StatelessWidget {
                                     Text(
                                       'Hours',
                                       style: TextStyle(
-                                        fontFamily: FitnessAppTheme.fontName,
+                                        fontFamily: DexifyAppTheme.fontName,
                                         fontWeight: FontWeight.w500,
                                         fontSize: 16,
                                         letterSpacing: -0.2,
-                                        color: FitnessAppTheme.darkText,
+                                        color: DexifyAppTheme.darkText,
                                       ),
                                     ),
                                     Padding(
@@ -543,10 +543,10 @@ class MediterranesnDietView extends StatelessWidget {
                                         '15 hours left',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                          fontFamily: FitnessAppTheme.fontName,
+                                          fontFamily: DexifyAppTheme.fontName,
                                           fontWeight: FontWeight.w600,
                                           fontSize: 12,
-                                          color: FitnessAppTheme.grey
+                                          color: DexifyAppTheme.grey
                                               .withOpacity(0.5),
                                         ),
                                       ),

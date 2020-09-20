@@ -1,4 +1,4 @@
-import 'package:dexify/app_themes/fintness_app_theme.dart';
+import 'package:dexify/app_themes/dexify_app_theme.dart';
 import 'package:dexify/src/models/moodcard.dart';
 import 'package:dexify/src/mood_tracker/chart.dart';
 import 'package:dexify/src/mood_tracker/homepage.dart';
@@ -31,7 +31,7 @@ class MoodTrackerView extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(colors: [
-                    FitnessAppTheme.nearlyDarkBlue,
+                    DexifyAppTheme.nearlyDarkBlue,
                     HexColor("#6F56E8")
                   ], begin: Alignment.topLeft, end: Alignment.bottomRight),
                   borderRadius: BorderRadius.only(
@@ -41,7 +41,7 @@ class MoodTrackerView extends StatelessWidget {
                       topRight: Radius.circular(68.0)),
                   boxShadow: <BoxShadow>[
                     BoxShadow(
-                        color: FitnessAppTheme.grey.withOpacity(0.6),
+                        color: DexifyAppTheme.grey.withOpacity(0.6),
                         offset: Offset(1.1, 1.1),
                         blurRadius: 10.0),
                   ],
@@ -56,11 +56,11 @@ class MoodTrackerView extends StatelessWidget {
                         'Notes and your Statistics',
                         textAlign: TextAlign.left,
                         style: TextStyle(
-                          fontFamily: FitnessAppTheme.fontName,
+                          fontFamily: DexifyAppTheme.fontName,
                           fontWeight: FontWeight.normal,
                           fontSize: 14,
                           letterSpacing: 0.0,
-                          color: FitnessAppTheme.white,
+                          color: DexifyAppTheme.white,
                         ),
                       ),
                       Padding(
@@ -69,11 +69,11 @@ class MoodTrackerView extends StatelessWidget {
                           'You can view your past notes, your statistics, and create new ones over here',
                           textAlign: TextAlign.left,
                           style: TextStyle(
-                            fontFamily: FitnessAppTheme.fontName,
+                            fontFamily: DexifyAppTheme.fontName,
                             fontWeight: FontWeight.normal,
                             fontSize: 20,
                             letterSpacing: 0.0,
-                            color: FitnessAppTheme.white,
+                            color: DexifyAppTheme.white,
                           ),
                         ),
                       ),
@@ -91,11 +91,11 @@ class MoodTrackerView extends StatelessWidget {
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                color: FitnessAppTheme.nearlyWhite,
+                                color: DexifyAppTheme.nearlyWhite,
                                 shape: BoxShape.circle,
                                 boxShadow: <BoxShadow>[
                                   BoxShadow(
-                                      color: FitnessAppTheme.nearlyBlack
+                                      color: DexifyAppTheme.nearlyBlack
                                           .withOpacity(0.4),
                                       offset: Offset(8.0, 8.0),
                                       blurRadius: 8.0),

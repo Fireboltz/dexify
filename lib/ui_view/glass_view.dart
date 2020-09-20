@@ -1,4 +1,4 @@
-import 'package:dexify/app_themes/fintness_app_theme.dart';
+import 'package:dexify/app_themes/dexify_app_theme.dart';
 import 'package:flutter/material.dart';
 
 import '../main.dart';
@@ -53,11 +53,11 @@ class GlassView extends StatelessWidget {
                                   'Eating healthy and stay hydrated are amongst the most important activities of tha day.',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
-                                    fontFamily: FitnessAppTheme.fontName,
+                                    fontFamily: DexifyAppTheme.fontName,
                                     fontWeight: FontWeight.w500,
                                     fontSize: 14,
                                     letterSpacing: 0.0,
-                                    color: FitnessAppTheme.nearlyDarkBlue
+                                    color: DexifyAppTheme.nearlyDarkBlue
                                         .withOpacity(0.6),
                                   ),
                                 ),
@@ -72,7 +72,7 @@ class GlassView extends StatelessWidget {
                         child: SizedBox(
                           width: 80,
                           height: 80,
-                          child: Image.asset("assets/fitness_app/glass.png"),
+                          child: Image.asset("assets/dexify/glass.png"),
                         ),
                       )
                     ],

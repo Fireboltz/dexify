@@ -5,17 +5,17 @@ import 'package:dexify/ui_view/emotion_detection.dart';
 import 'package:flutter/material.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'app_themes/fintness_app_theme.dart';
+import 'app_themes/dexify_app_theme.dart';
 import 'bottom_navigation_view/bottom_bar_view.dart';
 import 'models/tabIcon_data.dart';
-import 'my_diary/my_diary_screen.dart';
+import 'tracker/my_tracker.dart';
 
-class FitnessAppHomeScreen extends StatefulWidget {
+class DexifyAppHomeScreen extends StatefulWidget {
   @override
-  _FitnessAppHomeScreenState createState() => _FitnessAppHomeScreenState();
+  _DexifyAppHomeScreenState createState() => _DexifyAppHomeScreenState();
 }
 
-class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
+class _DexifyAppHomeScreenState extends State<DexifyAppHomeScreen>
     with TickerProviderStateMixin {
   AnimationController animationController;
 
@@ -23,7 +23,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
   List<TabIconData> tabIconsList = TabIconData.tabIconsList;
 
   Widget tabBody = Container(
-    color: FitnessAppTheme.background,
+    color: DexifyAppTheme.background,
   );
 
   @override
@@ -51,7 +51,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: FitnessAppTheme.background,
+      color: DexifyAppTheme.background,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: FutureBuilder<bool>(
