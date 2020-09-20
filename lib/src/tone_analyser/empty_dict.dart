@@ -18,7 +18,7 @@ class EmptyDict extends StatelessWidget {
           ),
           SizedBox(height: 16),
           Text(
-            'Searching for your plant',
+            'Let us take a moment to reflect',
             style: TextStyle(
                 fontWeight: FontWeight.w300, fontSize: 16, letterSpacing: 1.2),
           )
