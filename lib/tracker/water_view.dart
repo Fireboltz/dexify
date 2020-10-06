@@ -17,14 +17,30 @@ class WaterView extends StatefulWidget {
 }
 
 class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
+  int amountDrunk = 0;
+
   Future<bool> getData() async {
     await Future<dynamic>.delayed(const Duration(milliseconds: 50));
     return true;
   }
 
+  incrementAmount() {
+    setState(() {
+      amountDrunk += 100;
+    });
+  }
+
+  decrementAmount() {
+    // early return if amount is 0
+    if (amountDrunk == 0) return;
+
+    setState(() {
+      amountDrunk -= 100;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    int amountDrunk = 0;
     return AnimatedBuilder(
       animation: widget.mainScreenAnimationController,
       builder: (BuildContext context, Widget child) {
@@ -71,7 +87,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                                       padding: const EdgeInsets.only(
                                           left: 4, bottom: 3),
                                       child: Text(
-                                        '2100',
+                                        '$amountDrunk',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                           fontFamily: DexifyAppTheme.fontName,
@@ -190,10 +206,13 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                               ),
                               child: Padding(
                                 padding: const EdgeInsets.all(6.0),
-                                child: Icon(
-                                  Icons.add,
-                                  color: DexifyAppTheme.nearlyDarkBlue,
-                                  size: 24,
+                                child: GestureDetector(
+                                  onTap: () => incrementAmount(),
+                                  child: Icon(
+                                    Icons.add,
+                                    color: DexifyAppTheme.nearlyDarkBlue,
+                                    size: 24,
+                                  ),
                                 ),
                               ),
                             ),
@@ -214,10 +233,13 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                               ),
                               child: Padding(
                                 padding: const EdgeInsets.all(6.0),
-                                child: Icon(
-                                  Icons.remove,
-                                  color: DexifyAppTheme.nearlyDarkBlue,
-                                  size: 24,
+                                child: GestureDetector(
+                                  onTap: () => decrementAmount(),
+                                  child: Icon(
+                                    Icons.remove,
+                                    color: DexifyAppTheme.nearlyDarkBlue,
+                                    size: 24,
+                                  ),
                                 ),
                               ),
                             ),
@@ -245,7 +267,7 @@ class _WaterViewState extends State<WaterView> with TickerProviderStateMixin {
                             ],
                           ),
                           child: WaveView(
-                            percentageValue: 60.0,
+                            percentageValue: amountDrunk / 3500 * 100,
                           ),
                         ),
                       )
