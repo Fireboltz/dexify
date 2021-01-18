@@ -48,13 +48,13 @@ class EmotionRunningView extends StatelessWidget {
                             children: <Widget>[
                               ClipRRect(
                                 borderRadius:
-                                BorderRadius.all(Radius.circular(8.0)),
+                                    BorderRadius.all(Radius.circular(8.0)),
                                 child: SizedBox(
                                   height: 74,
                                   child: AspectRatio(
                                     aspectRatio: 1.714,
-                                    child: Image.asset(
-                                        "assets/dexify/back.png"),
+                                    child:
+                                        Image.asset("assets/dexify/back.png"),
                                   ),
                                 ),
                               ),
@@ -63,23 +63,25 @@ class EmotionRunningView extends StatelessWidget {
                                 children: <Widget>[
                                   Row(
                                     children: <Widget>[
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                          left: 100,
-                                          right: 16,
-                                          top: 16,
-                                        ),
-                                        child: Text(
-                                          "We have some motivation for you!",
-                                          textAlign: TextAlign.left,
-                                          style: TextStyle(
-                                            fontFamily:
-                                            DexifyAppTheme.fontName,
-                                            fontWeight: FontWeight.w500,
-                                            fontSize: 14,
-                                            letterSpacing: 0.0,
-                                            color:
-                                            DexifyAppTheme.nearlyDarkBlue,
+                                      Flexible(
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                            left: 100,
+                                            right: 16,
+                                            top: 16,
+                                          ),
+                                          child: Text(
+                                            "We have some motivation for you!",
+                                            textAlign: TextAlign.left,
+                                            style: TextStyle(
+                                              fontFamily:
+                                                  DexifyAppTheme.fontName,
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: 14,
+                                              letterSpacing: 0.0,
+                                              color:
+                                                  DexifyAppTheme.nearlyDarkBlue,
+                                            ),
                                           ),
                                         ),
                                       ),

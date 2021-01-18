@@ -53,8 +53,8 @@ class RunningView extends StatelessWidget {
                                   height: 74,
                                   child: AspectRatio(
                                     aspectRatio: 1.714,
-                                    child: Image.asset(
-                                        "assets/dexify/back.png"),
+                                    child:
+                                        Image.asset("assets/dexify/back.png"),
                                   ),
                                 ),
                               ),
@@ -63,23 +63,25 @@ class RunningView extends StatelessWidget {
                                 children: <Widget>[
                                   Row(
                                     children: <Widget>[
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                          left: 100,
-                                          right: 16,
-                                          top: 16,
-                                        ),
-                                        child: Text(
-                                          "You're doing great!",
-                                          textAlign: TextAlign.left,
-                                          style: TextStyle(
-                                            fontFamily:
-                                                DexifyAppTheme.fontName,
-                                            fontWeight: FontWeight.w500,
-                                            fontSize: 14,
-                                            letterSpacing: 0.0,
-                                            color:
-                                                DexifyAppTheme.nearlyDarkBlue,
+                                      Flexible(
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                            left: 100,
+                                            right: 16,
+                                            top: 16,
+                                          ),
+                                          child: Text(
+                                            "You're doing great!",
+                                            textAlign: TextAlign.left,
+                                            style: TextStyle(
+                                              fontFamily:
+                                                  DexifyAppTheme.fontName,
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: 14,
+                                              letterSpacing: 0.0,
+                                              color:
+                                                  DexifyAppTheme.nearlyDarkBlue,
+                                            ),
                                           ),
                                         ),
                                       ),
